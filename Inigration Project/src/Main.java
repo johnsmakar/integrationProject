@@ -9,28 +9,32 @@ import javax.swing.JOptionPane;
 public class Main {
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
 
+	//Greeting to user
     System.out.println("Welcome Back!");
-
+    
+    
+    // The String Class is a sequence of letters
     String hello = "Hello World!";
+    // The integer is a primitive data-type that is used to hold a numeric values
     int age = 18;
     String myName = "John";
     // Double value set as Final Variable
-    double GPA = 3.5F;
+    final double GPA = 3.5;
+    //boolean holds true, or false Values
+    boolean systemValidation = true;
 
     // I learned how to us JOptionPane from Oracle
     // Answer to question should be "Yes" or "No"
-    String somehting = JOptionPane.showInputDialog("Are you a human?");
+    String humanVerification = JOptionPane.showInputDialog("Are you a human?");
     // DOB format must be, MM/DD/YYYY
     String dateOfBirth = (String) JOptionPane.showInputDialog(null, "Date of Birth", "Dialog Title",
         2, null, null, "MM/DD/YYYY");
+    // Must select one of two options from drop down
     String[] acceptableValues = {"Male", "Female"};
-
     String input2 = (String) JOptionPane.showInputDialog(null, "Gender", "Dialog Title", 2, null,
         acceptableValues, acceptableValues[1]);
 
-    // Scanner scan = new Scanner(system.in);
 
     System.out.println(hello);
     // String concatenation
@@ -38,11 +42,11 @@ public class Main {
     System.out.print("Age: ");
     System.out.println(age);
     System.out.println("My GPA is " + GPA);
-    // System.out.println("Shirt Size: " + shirtSize);
     System.out.print("Are you a human?: ");
-    System.out.println(somehting);
+    System.out.println(humanVerification);
     System.out.println("DOB: " + dateOfBirth);
     System.out.println(input2);
+    System.out.println("Statement returns " + systemValidation);
 
   }
 
