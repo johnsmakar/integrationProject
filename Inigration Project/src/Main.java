@@ -19,10 +19,16 @@ public class Main {
     // The integer is a primitive data-type that is used to hold a numeric values
     int age = 18;
     String myName = "John";
-    // Double value set as Final Variable
+    // Double value set as Final Variable and cannot be reassigned.
     final double GPA = 3.5;
     //boolean holds true, or false Values
     boolean systemValidation = true;
+    
+    /* A Variable in java is a piece of memory that can contain a data value. 
+     * 
+     * A Scope in java is an instance of a variable or refers to the section of code where a
+     * variable can be accessed.
+     */
 
     // I learned how to us JOptionPane from Oracle
     // Answer to question should be "Yes" or "No"
