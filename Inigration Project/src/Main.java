@@ -23,7 +23,7 @@ public class Main {
     String myName = "John";
     // Double value set as Final Variable and cannot be reassigned.
     final double GPA = 3.5;
-    //boolean holds true, or false Values 
+    //boolean holds true, or false Values
     boolean systemValidation = true;
     
     
