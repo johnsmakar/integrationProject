@@ -56,7 +56,7 @@ public class Main {
     System.out.println(humanVerification);
     System.out.println("DOB: " + dateOfBirth);
     System.out.println(input2);
-    // Escape sequence pushes systemValidation to new line
+    // Escape sequence pushes systemValidation to new line 
     System.out.println("Statement returns \n" + systemValidation);
     
 
