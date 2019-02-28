@@ -17,12 +17,16 @@ public class Main {
     // The String Class is a sequence of letters
     String hello = "Hello World!";
     // The integer is a primitive data-type that is used to hold a numeric values
-    int age = 18;
+    double age = 18;
+    //casting int age to double
+    int myAge = (int) age;
     String myName = "John";
     // Double value set as Final Variable and cannot be reassigned.
     final double GPA = 3.5;
     //boolean holds true, or false Values
     boolean systemValidation = true;
+    
+    
     
     /* A Variable in java is a piece of memory that can contain a data value. 
      * 
@@ -46,13 +50,15 @@ public class Main {
     // String concatenation
     System.out.println("My name is " + myName);
     System.out.print("Age: ");
-    System.out.println(age);
+    System.out.println(myAge);
     System.out.println("My GPA is " + GPA);
     System.out.print("Are you a human?: ");
     System.out.println(humanVerification);
     System.out.println("DOB: " + dateOfBirth);
     System.out.println(input2);
-    System.out.println("Statement returns " + systemValidation);
+    // Escape sequence pushes systemValidation to new line
+    System.out.println("Statement returns \n" + systemValidation);
+    
 
   }
 
