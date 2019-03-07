@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.util.Random;
 
 // John Makar
 /*
@@ -20,6 +21,12 @@ public class Main {
     double age = 18;
     //casting int age to double
     int myAge = (int) age;
+    
+    // Random integer is being generated to compare to the value 66
+    Random rand = new Random();
+    int rand_int1 = rand.nextInt(100);
+    //Value is being directly called 
+    
     String myName = "John";
     // Double value set as Final Variable and cannot be reassigned.
     final double GPA = 3.5;
@@ -27,6 +34,14 @@ public class Main {
     boolean systemValidation = true;
     
     
+   
+    // Randomly generates test cases
+	Random test = new Random();
+	int n1 = test.nextInt(), n2 = test.nextInt(), maximum;
+    // dot operator is used to call method from another class
+   maximum =  characterSelection.max(n1,n2); 
+    //Value stored in variable
+    System.out.println("Test Case: " + maximum);
     
     /* A Variable in java is a piece of memory that can contain a data value. 
      * 
@@ -50,14 +65,16 @@ public class Main {
     // String concatenation
     System.out.println("My name is " + myName);
     System.out.print("Age: ");
-    System.out.println(myAge);
+   /* This makes it so that you may or may not get the age you were assigned on line 21
+      Value is directly being called from characterSelection class*/
+    System.out.println(characterSelection.max(rand_int1, myAge));
     System.out.println("My GPA is " + GPA);
     System.out.print("Are you a human?: ");
     System.out.println(humanVerification);
     System.out.println("DOB: " + dateOfBirth);
     System.out.println(input2);
     // Escape sequence pushes systemValidation to new line 
-    System.out.println("Statement returns \n" + systemValidation);
+    System.out.println("Statement returns: \n" + systemValidation);
     
 
   }
