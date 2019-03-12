@@ -10,7 +10,7 @@ public class characterSelection {
 		
 		int result;
 		//Conditional Parameters
-		if(num1 >= num2)
+		if(num1 >= num2) 
 			result = num1;
 			else
 				result = num2;

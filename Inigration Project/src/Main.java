@@ -18,11 +18,12 @@ public class Main {
     // The String Class is a sequence of letters
     String hello = "Hello World!";
     // The integer is a primitive data-type that is used to hold a numeric values
-    double age = 18;
+    double age = -18;
     //casting int age to double
-    int myAge = (int) age;
+    //Using Math absolute to get positive age value
+    int myAge = (int) Math.abs(age);
     
-    // Random integer is being generated to compare to the value 66
+    // Random integer is being generated to compare to your age
     Random rand = new Random();
     int rand_int1 = rand.nextInt(100);
     //Value is being directly called 
