@@ -28,7 +28,8 @@ public class Main {
     int rand_int1 = rand.nextInt(100);
     //Value is being directly called 
     
-    String myName = "John";
+    String myName;
+    myName.getName
     // Double value set as Final Variable and cannot be reassigned.
     final double GPA = 3.5;
     //boolean holds true, or false Values
@@ -60,7 +61,11 @@ public class Main {
     String[] acceptableValues = {"Male", "Female"};
     String input2 = (String) JOptionPane.showInputDialog(null, "Gender", "Dialog Title", 2, null,
         acceptableValues, acceptableValues[1]);
-
+    
+    
+    Character myCharacter = new Character();
+    
+    
 
     System.out.println(hello);
     // String concatenation
